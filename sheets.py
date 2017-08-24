@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #opening the sheets through pandas 
+#df is the complete data frame taken from the source
 df = pd.read_excel(open('/home/douglas/Juliane/local.xlsx', 'rb'), decoding = 'utf-8', sheetname = 'Planilha2', index_col='Name')
 
 #segregating the OEM group
