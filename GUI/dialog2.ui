@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog2</class>
+ <widget class="QDialog" name="Dialog2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>619</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>INV Client</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>581</width>
+     <height>230</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="text">
+       <string>OEM (BMW, Ford)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="text">
+       <string>Tier 1 (Conti, TRW, Helloa, ZF, Bosch, Webasto, Bombardier, Braexelmaier, Peiker)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="text">
+       <string>Tier 2 (Renesas, Perei)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QCheckBox" name="checkBox_4">
+      <property name="text">
+       <string>Non Automotive (Bosch ebike, Franki Grundbau, Soehner)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Question</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Teamgroese</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PEP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Struktur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tools</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Detailplanung</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ressourcenplanung</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kostenplanung</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aenderungen</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Projektkunden</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Templates</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Organisationsform</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PMO</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Plot</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
