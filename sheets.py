@@ -16,6 +16,13 @@ tier2 = df.loc[df['Frage 1'].isin(['Renesas DUeS', 'Renesas', 'Perei'])]
 #segregating the Non-Automotive group
 na = df.loc[df['Frage 1'].isin(['Bosch- eBike Systems', 'Franki Gundbau', 'Soehner'])]
 
+# second segmentations (VW, BMW, Others, Not Relevant)
+vw = df.loc[df['Frage 6'].isin(['VW Konzern', 'Porsche /VW', 'VW', 'Audi', 'Porsche', 'Audi, VW, Seat Porsche'])]
+bmw = df.loc[df['Frage 6'].isin(['BMW'])]
+others = df.loc[df['Frage 6'].isin(['Daimler', 'Fiat', 'viele OEMS', 'Evobus', 'PSA', 'Honda/GM'])]
+notrelevant = df.loc[df['Frage 6'].isin(['Eigenentwicklung, kein OEM, aber Fahrradhersteller geben Features vor', 'Hella', 'Eigenentwicklung / Marketing als Kunde', 'Franki Gundbau'])]
+
+
 #size of the team
 y = [1, 2, 3, 4, 5, 6]
 labels = ['kleiner 10', '11 - 25', '26 - 50', '51 - 75', '75 - 100', ' groesser 100']
@@ -48,11 +55,5 @@ plt.title('Non-automotive')
 plt.ylabel('Teamgroesse')
 #plt.show()
 
-
-# second segmentations (VW, BMW, Others, Not Relevant)
-vw = df.loc[df['Frage 6'].isin(['VW Konzern', 'Porsche /VW', 'VW', 'Audi', 'Porsche', 'Audi, VW, Seat Porsche'])]
-bmw = df.loc[df['Frage 6'].isin(['BMW'])]
-others = df.loc[df['Frage 6'].isin(['Daimler', 'Fiat', 'viele OEMS', 'Evobus', 'PSA', 'Honda/GM'])]
-notrelevant = df.loc[df['Frage 6'].isin(['Eigenentwicklung, kein OEM, aber Fahrradhersteller geben Features vor', 'Hella', 'Eigenentwicklung / Marketing als Kunde', 'Franki Gundbau'])]
 
 print vw
