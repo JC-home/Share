@@ -10,6 +10,6 @@ class App(QDialog):
             self.show()
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    w = AppWindow()
+    w = App()
     w.show()
     sys.exit(app.exec_())
