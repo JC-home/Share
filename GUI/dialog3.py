@@ -43,6 +43,7 @@ class Ui_Dialog3(object):
         self.comboBox3.addItem("")
         self.comboBox3.addItem("")
         self.comboBox3.addItem("")
+        self.comboBox3.addItem("")
         self.gridLayout.addWidget(self.comboBox3, 5, 0, 1, 1)
         self.PlotButton3 = QtWidgets.QPushButton(self.layoutWidget)
         self.PlotButton3.setObjectName("PlotButton3")
@@ -68,7 +69,8 @@ class Ui_Dialog3(object):
         self.comboBox3.setItemText(4, _translate("Dialog3", "Feature release"))
         self.comboBox3.setItemText(5, _translate("Dialog3", "Aenderungen"))
         self.comboBox3.setItemText(6, _translate("Dialog3", "Ist/Soll"))
-        self.comboBox3.setItemText(7, _translate("Dialog3", "Projektkunden"))
+        self.comboBox3.setItemText(7, _translate("Dialog3", "ProjektrundenA"))
+        self.comboBox3.setItemText(8, _translate("Dialog3", "ProjektrundenB"))
         self.PlotButton3.setText(_translate("Dialog3", "Plot"))
         self.backButton3.setText(_translate("Dialog3", "Back"))
 

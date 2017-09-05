@@ -97,7 +97,12 @@
       </item>
       <item>
        <property name="text">
-        <string>Projektkunden</string>
+        <string>ProjektrundenA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ProjektrundenB</string>
        </property>
       </item>
      </widget>

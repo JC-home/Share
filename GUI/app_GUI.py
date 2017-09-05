@@ -10,7 +10,8 @@ AW11="In welchen Firmen hattest du dein Projekt (Branche/OEM/Tier1,2,3)?"
 AW12="Wer ist der Kunde?"
 showTrigger = 1 #Show AppWindow1
 #Flagcheckbox
-flag = [0] * 4
+flag2 = [0] * 5
+flag3 = [0] * 5
 
 
 #Main window
@@ -28,13 +29,11 @@ class AppWindow1(QDialog):
     def decision(self):
         text_decision = str(self.ui.comboBox1.currentText())
         if text_decision == AW11:
-            aufteilung = 'Frage 1'
             self.hide()
             self.QDialog = AppWindow2(self)
         elif text_decision == AW12:
             self.hide()
             self.QDialog = AppWindow3(self)
-            aufteilung = 'Frage 6'
         else:        
             return 
 #Window if the following response is selected by AppWindow1
@@ -60,22 +59,22 @@ class AppWindow2(QDialog):
         #get flags if checked self.ui.checkBox31.isChecked() = True
         #starts with a zero [0 x x x x]
         if self.ui.checkBox21.isChecked():
-            flag[0] = 1
+            flag2[0] = 1
         else:
-            flag[0] = 0
+            flag2[0] = 0
         if self.ui.checkBox22.isChecked():
-            flag[1] = 1
+            flag2[1] = 1
         else:
-            flag[1] = 0
+            flag2[1] = 0
         if self.ui.checkBox23.isChecked():
-            flag[2] = 1  
+            flag2[2] = 1  
         else:
-            flag[2] = 0         
+            flag2[2] = 0         
         if self.ui.checkBox24.isChecked():
-            flag[3] = 1
+            flag2[3] = 1
         else:
-            flag[3] = 0
-        print flag
+            flag2[3] = 0
+        print flag2
 
     def back2(self):
         self.hide()
@@ -104,22 +103,22 @@ class AppWindow3(QDialog):
 
         #get flags if checked self.ui.checkBox31.isChecked() = True
         if self.ui.checkBox31.isChecked():
-            flag[0] = 1
+            flag3[0] = 1
         else:
-            flag[0] = 0
+            flag3[0] = 0
         if self.ui.checkBox32.isChecked():
-            flag[1] = 1
+            flag3[1] = 1
         else:
-            flag[1] = 0
+            flag3[1] = 0
         if self.ui.checkBox33.isChecked():
-            flag[2] = 1  
+            flag3[2] = 1  
         else:
-            flag[2] = 0         
+            flag3[2] = 0         
         if self.ui.checkBox34.isChecked():
-            flag[3] = 1
+            flag3[3] = 1
         else:
-            flag[3] = 0
-        print flag
+            flag3[3] = 0
+        print flag3
 
     def back3(self):
         self.hide()
