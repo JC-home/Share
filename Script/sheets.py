@@ -27,7 +27,7 @@ notrelevant = df.loc[df['Frage 6'].isin(['Eigenentwicklung, kein OEM, aber Fahrr
 
 color_map = ['blue', 'red', 'green', 'orange', 'purple', 'pink', 'brown', 'yellow', 'magenta', 'gray']
 #dictionaries for each plot
-aufteilung = 'Frage 1' #or Frage 6 - gives the macroset
+#aufteilung = 'Frage 1' #or Frage 6 - gives the macroset
 frage = 'Frage 33' #input
 ##TODO CHANGE THE Y LABELS
 if aufteilung == 'Frage 1':
@@ -54,8 +54,8 @@ elif aufteilung == 'Frage 6':
                     'Feature release': {'question': 'Frage 16', 'labels': ['Nein', 'Ja', 'von OEN vorgegeben', 'eigene Planung'], 'y_axis' : [0, 1, 2, 3], 'kind' : 'pie','y_label' : 'Teamgroesse', 'supertitle': 'Gibt es einen Feature Releaseplan? Wenn ja, in welcher Form'},
                     'Aenderungen': {'question': 'Frage 20', 'labels': ['gar nicht', 'ueber Versionierung', 'ueber Baseline', 'Versionierung und Baseline'], 'y_axis' : [0, 1, 2, 3], 'kind' : 'pie','y_label' : 'Teamgroesse', 'supertitle': 'Wie wird dokumentiert ihr Aenderungen im Terminplan?' },
                     'Ist/Soll': {'question': 'Frage 21', 'labels': ['gar nicht', 'ueber Versionierung', 'ueber Baselinie', 'ueber Spalte in Plan', 'automatisiert'], 'y_axis' : [0, 1, 2, 3, 4], 'kind' : 'pie','y_label' : 'Teamgroesse', 'supertitle': 'Werden IST/Soll Abweichungen in der Projektplanung dargestellt?' },
-                    'Frage 24a': {'question': 'Frage 24a', 'labels': [0, 1, 2, 3, 4, 5, 6], 'y_axis' : [0, 1, 2, 3, 4, 5, 6], 'kind' : 'pie', 'y_label' : 'Teamgroesse', 'supertitle': 'Wie wurden Projektrunden gehandhabt? (Agenda?) : Anzahl regelmeetings'},
-                    'Frage 24b': {'question': 'Frage 24b', 'labels': ['unknown','Teammeeting', 'Teammeeting und Standupmeeting', 'Teammeeting und Kundenmeeting', 'Team, Kunde- und Kundenmeeting', 'Standup, Team, weitere interne Meetings', 'Team, Kunde, weitere interne Meetings' ], 'y_axis' : [1, 2, 3, 4, 5, 6], 'kind' : 'pie', 'y_label' : 'Teamgroesse', 'supertitle': 'Wie wurden Projektrunden gehandhabt? (Agenda?)' },
+                    'ProjektrundenA': {'question': 'Frage 24a', 'labels': [0, 1, 2, 3, 4, 5, 6], 'y_axis' : [0, 1, 2, 3, 4, 5, 6], 'kind' : 'pie', 'y_label' : 'Teamgroesse', 'supertitle': 'Wie wurden Projektrunden gehandhabt? (Agenda?) : Anzahl regelmeetings'},
+                    'ProjektrundenB': {'question': 'Frage 24b', 'labels': ['unknown','Teammeeting', 'Teammeeting und Standupmeeting', 'Teammeeting und Kundenmeeting', 'Team, Kunde- und Kundenmeeting', 'Standup, Team, weitere interne Meetings', 'Team, Kunde, weitere interne Meetings' ], 'y_axis' : [1, 2, 3, 4, 5, 6], 'kind' : 'pie', 'y_label' : 'Teamgroesse', 'supertitle': 'Wie wurden Projektrunden gehandhabt? (Agenda?)' },
                       }
 
 vector = question_dict[frage]    
