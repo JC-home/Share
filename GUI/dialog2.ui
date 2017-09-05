@@ -24,28 +24,28 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QCheckBox" name="checkBox">
+     <widget class="QCheckBox" name="checkBox21">
       <property name="text">
        <string>OEM (BMW, Ford)</string>
       </property>
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QCheckBox" name="checkBox_2">
+     <widget class="QCheckBox" name="checkBox22">
       <property name="text">
        <string>Tier 1 (Conti, TRW, Helloa, ZF, Bosch, Webasto, Bombardier, Braexelmaier, Peiker)</string>
       </property>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QCheckBox" name="checkBox_3">
+     <widget class="QCheckBox" name="checkBox23">
       <property name="text">
        <string>Tier 2 (Renesas, Perei)</string>
       </property>
      </widget>
     </item>
     <item row="3" column="0">
-     <widget class="QCheckBox" name="checkBox_4">
+     <widget class="QCheckBox" name="checkBox24">
       <property name="text">
        <string>Non Automotive (Bosch ebike, Franki Grundbau, Soehner)</string>
       </property>
@@ -59,7 +59,7 @@
      </widget>
     </item>
     <item row="5" column="0">
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="comboBox2">
       <item>
        <property name="text">
         <string/>
@@ -128,14 +128,14 @@
      </widget>
     </item>
     <item row="6" column="0">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="PlotButton2">
       <property name="text">
        <string>Plot</string>
       </property>
      </widget>
     </item>
     <item row="7" column="0">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="backButton2">
       <property name="text">
        <string>Back</string>
       </property>

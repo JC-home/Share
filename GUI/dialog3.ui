@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog2</class>
- <widget class="QDialog" name="Dialog2">
+ <class>Dialog3</class>
+ <widget class="QDialog" name="Dialog3">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Ext Client</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -24,28 +24,28 @@
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QCheckBox" name="checkBox">
+     <widget class="QCheckBox" name="checkBox31">
       <property name="text">
        <string>VW (VW, Audi, Porsche)</string>
       </property>
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QCheckBox" name="checkBox_2">
+     <widget class="QCheckBox" name="checkBox32">
       <property name="text">
        <string>BMW (BMW)</string>
       </property>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QCheckBox" name="checkBox_3">
+     <widget class="QCheckBox" name="checkBox33">
       <property name="text">
        <string>Others (Daimler, Fiat, GM, Evobus, PSA, Honda, OEMs)</string>
       </property>
      </widget>
     </item>
     <item row="3" column="0">
-     <widget class="QCheckBox" name="checkBox_4">
+     <widget class="QCheckBox" name="checkBox34">
       <property name="text">
        <string>Not Relevant (Hella, Franki Grundbau, internal developement)</string>
       </property>
@@ -59,10 +59,10 @@
      </widget>
     </item>
     <item row="5" column="0">
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="comboBox3">
       <item>
        <property name="text">
-        <string> </string>
+        <string/>
        </property>
       </item>
       <item>
@@ -103,14 +103,14 @@
      </widget>
     </item>
     <item row="6" column="0">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="PlotButton3">
       <property name="text">
        <string>Plot</string>
       </property>
      </widget>
     </item>
     <item row="7" column="0">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="backButton3">
       <property name="text">
        <string>Back</string>
       </property>

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'dialog1.ui'
 #
-# Created by: PyQt5 UI code generator 5.6
+# Created by: PyQt5 UI code generator 5.5.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -16,7 +16,6 @@ class Ui_InitalDialog(object):
         self.layoutWidget.setGeometry(QtCore.QRect(10, 21, 502, 85))
         self.layoutWidget.setObjectName("layoutWidget")
         self.formLayout = QtWidgets.QFormLayout(self.layoutWidget)
-        self.formLayout.setContentsMargins(0, 0, 0, 0)
         self.formLayout.setObjectName("formLayout")
         self.label = QtWidgets.QLabel(self.layoutWidget)
         self.label.setObjectName("label")
@@ -24,13 +23,12 @@ class Ui_InitalDialog(object):
         self.comboBox1 = QtWidgets.QComboBox(self.layoutWidget)
         self.comboBox1.setObjectName("comboBox1")
         self.comboBox1.addItem("")
-        self.comboBox1.setItemText(0, "")
         self.comboBox1.addItem("")
         self.comboBox1.addItem("")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.comboBox1)
-        self.pushButton = QtWidgets.QPushButton(self.layoutWidget)
-        self.pushButton.setObjectName("pushButton")
-        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.pushButton)
+        self.PushButton1ok = QtWidgets.QPushButton(self.layoutWidget)
+        self.PushButton1ok.setObjectName("PushButton1ok")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.PushButton1ok)
 
         self.retranslateUi(InitalDialog)
         QtCore.QMetaObject.connectSlotsByName(InitalDialog)
@@ -39,7 +37,8 @@ class Ui_InitalDialog(object):
         _translate = QtCore.QCoreApplication.translate
         InitalDialog.setWindowTitle(_translate("InitalDialog", "Dependency"))
         self.label.setText(_translate("InitalDialog", "Dependency 1"))
+        self.comboBox1.setItemText(0, _translate("InitalDialog", "-"))
         self.comboBox1.setItemText(1, _translate("InitalDialog", "In welchen Firmen hattest du dein Projekt (Branche/OEM/Tier1,2,3)?"))
         self.comboBox1.setItemText(2, _translate("InitalDialog", "Wer ist der Kunde?"))
-        self.pushButton.setText(_translate("InitalDialog", "ok"))
+        self.PushButton1ok.setText(_translate("InitalDialog", "ok"))
 
