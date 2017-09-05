@@ -3,12 +3,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+#########################GUI######################################
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QDialog
 #import the module created in the qtdesigner
 from dialog1 import Ui_InitalDialog
 from dialog2 import Ui_Dialog2
 from dialog3 import Ui_Dialog3
+
 
 #Dropdown of AppWindow1
 AW11="In welchen Firmen hattest du dein Projekt (Branche/OEM/Tier1,2,3)?"
@@ -83,6 +85,13 @@ class AppWindow2(QDialog):
             flag[3] = 0
         print flag
 
+        #####Jumping#######
+        tailflag = 2
+        #DATA tail Frage6
+        goto data
+        pass
+        label: Tail2
+
     def back2(self):
         self.hide()
         self.QDialog = AppWindow1(self)
@@ -126,6 +135,13 @@ class AppWindow3(QDialog):
             flag[3] = 0
         print flag
 
+        #####Jumping#######
+        tailflag = 3
+        #DATA tail Frage6
+        goto data
+        pass
+        label: Tail3
+
     def back3(self):
         self.hide()
         self.QDialog = AppWindow1(self)
@@ -136,7 +152,13 @@ def main():
     main.show()
     sys.exit(app.exec_())
 
-    ##DATA#opening the sheets through pandas 
+if __name__ == '__main__':
+    main()
+
+
+##################################################################
+label: data
+#opening the sheets through pandas 
 df1 = pd.read_excel(open('/home/douglas/Juliane/local.xlsx', 'rb'), decoding = 'utf-8', sheetname = 'Planilha2')
 df = df1.sort_values('Frage 1')
 
@@ -827,7 +849,9 @@ elif vector['kind'] ==  'pie':
 else:
     pass
 
-
-
-if __name__ == '__main__':
-    main()
+if tailflag == 2:
+    goto Tail2
+elif tailflag == 3:
+    goto Tail3
+else:
+    pass

@@ -39,6 +39,7 @@ class AppWindow1(QDialog):
             print aufteilung
         else:        
             return 
+        
 #Window if the following response is selected by AppWindow1
 #In welchen Firmen hattest du dein Projekt (Branche/OEM/Tier1,2,3)?
 class AppWindow2(QDialog):
