@@ -10,8 +10,8 @@ AW11="In welchen Firmen hattest du dein Projekt (Branche/OEM/Tier1,2,3)?"
 AW12="Wer ist der Kunde?"
 showTrigger = 1 #Show AppWindow1
 #Flagcheckbox
-flag2 = [0] * 4
-print flag2
+flag2 = [0] * 5
+flag3 = [0] * 5
 
 
 #Main window
@@ -52,19 +52,29 @@ class AppWindow2(QDialog):
 
     def plot2(self):
         print "Here comes the plot2"
-        #get flags if checked self.ui.checkBox31.isChecked() = True
-        if self.ui.checkBox21.isChecked():
-               print "checked21"
-               if self.ui.checkBox22.isChecked():
-                   print "checked22"
-                   if self.ui.checkBox23.isChecked():
-                       print "checked23"
-                       if self.ui.checkBox24.isChecked():
-                           print "checked24"
-        else:
-            return
         #Question
         text_flag2 = str(self.ui.comboBox2.currentText())
+        print text_flag2
+
+        #get flags if checked self.ui.checkBox31.isChecked() = True
+        #starts with a zero [0 x x x x]
+        if self.ui.checkBox21.isChecked():
+            flag2[1] = 1
+        else:
+            flag2[1] = 0
+        if self.ui.checkBox22.isChecked():
+            flag2[2] = 1
+        else:
+            flag2[2] = 0
+        if self.ui.checkBox23.isChecked():
+            flag2[3] = 1  
+        else:
+            flag2[3] = 0         
+        if self.ui.checkBox24.isChecked():
+            flag2[4] = 1
+        else:
+            flag2[4] = 0
+        print flag2
 
     def back2(self):
         self.hide()
@@ -86,19 +96,30 @@ class AppWindow3(QDialog):
 
     def plot3(self):
         print "Here comes the plot3"
-        #get flags if checked self.ui.checkBox31.isChecked() = True
-         if self.ui.checkBox31.isChecked():
-               print "checked31"
-               if self.ui.checkBox32.isChecked():
-                   print "checked32"
-                   if self.ui.checkBox33.isChecked():
-                       print "checked33"
-                       if self.ui.checkBox34.isChecked():
-                           print "checked34"
-        else:
-            return
+
         #Question
         text_flag3 = str(self.ui.comboBox3.currentText())
+        print text_flag3
+
+        #get flags if checked self.ui.checkBox31.isChecked() = True
+        #starts with a zero [0 x x x x]
+        if self.ui.checkBox31.isChecked():
+            flag3[1] = 1
+        else:
+            flag3[1] = 0
+        if self.ui.checkBox32.isChecked():
+            flag3[2] = 1
+        else:
+            flag3[2] = 0
+        if self.ui.checkBox33.isChecked():
+            flag3[3] = 1  
+        else:
+            flag3[3] = 0         
+        if self.ui.checkBox34.isChecked():
+            flag3[4] = 1
+        else:
+            flag3[4] = 0
+        print flag3
 
     def back3(self):
         self.hide()
