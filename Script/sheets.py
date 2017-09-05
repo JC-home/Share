@@ -65,7 +65,7 @@ flag = [ 0, 1, 1, 1]
 ii = flag.count(1)
 rot = 70
 
-#TODO ADD INDIVIDUAL PROCESSING TO EACH FRAME
+
 
 #TODO change the labels for each entry in the dictionary
 
